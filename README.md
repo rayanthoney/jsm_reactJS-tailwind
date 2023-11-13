@@ -126,7 +126,7 @@
 <br>
 <div>
     <p align="center">
-        <a href="#" target="_blank">
+        <a href="https://github.com/adrianhajdin/project_html_css_website" target="_blank">
         <img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&labelColor=black&for-the-badge&logo=github"/>
         </a>
         <a href="-URL DEMO GOES HERE-" target="_blank">
@@ -378,7 +378,7 @@ a ipsum. Eos, in iusto? Iste dolorum, tempore ipsam voluptates ex aspernatur
 voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iure voluptates possimus tempora quibusdam, iste, similique consectetur dolor adipisci unde tempore temporibus debitis, aperiam a ut exercitationem soluta est.    
     </p>
     <h3>Watch the video tutorial here::</h3>
-    <a href="https://www.youtube.com/watch?v=EyIvuigqDoA&t=6970s" target="_blank">
+    <a href="https://youtu.be/EyIvuigqDoA?si=cjl-tu4eR0I4OShC" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-red?style=plastic&labelColor=black&logo=youtube"/>
     </a>
 </div>
@@ -406,7 +406,7 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <br>
 <div>
     <p align="center">
-        <a href="https://github.com/rayanthoney/jm_3d_portfolio" target="_blank">
+        <a href="https://github.com/adrianhajdin/project_openai_codex" target="_blank">
         <img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&labelColor=black&for-the-badge&logo=github"/>
         </a>
         <a href="https://codex-askmemo.vercel.app/" target="_blank">
@@ -418,7 +418,7 @@ a ipsum. Eos, in iusto? Iste dolorum, tempore ipsam voluptates ex aspernatur
 voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iure voluptates possimus tempora quibusdam, iste, similique consectetur dolor adipisci unde tempore temporibus debitis, aperiam a ut exercitationem soluta est.    
     </p>
     <h3>Watch the video tutorial here::</h3>
-    <a href="https://youtu.be/QRrPE9aj3wI?si=462tASsi6G14p_4h" target="_blank">
+    <a href="https://youtu.be/2FeymQoKvrk?si=mV-nSNziNjCawhD8" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-red?style=plastic&labelColor=black&logo=youtube"/>
     </a>
 </div>
