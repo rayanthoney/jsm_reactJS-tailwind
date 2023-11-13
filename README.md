@@ -38,7 +38,7 @@
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
     <!-- link to local image -->
-        <img src="assets/images/js-mastery/project.png" alt="" width="30%" align="right" />
+        <img src="assets/images/js-mastery/ripple_scrn.png" alt="" width="30%" align="right" />
     </a>
 </div>
 
