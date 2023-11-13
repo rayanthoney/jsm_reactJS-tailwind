@@ -21,7 +21,7 @@
 <div align="center">
     <p>
         <a href="https://www.youtube.com/@javascriptmastery/">
-            <img  src="assets/images/js-mastery/jsmastery.jpg" width="64">
+            <img  src="assets/images/js-mastery/jsMastery.png" width="64">
         </a>
         <h3>JavaScript Mastery</h3>
     </p>
