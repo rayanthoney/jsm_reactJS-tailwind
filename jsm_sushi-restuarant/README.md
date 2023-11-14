@@ -9,14 +9,14 @@
 
 **Link to project:** http://recruiters-love-seeing-live-demos.com/
 
-<p>
-<a href="-URL TO GITHUB GOES HERE">
-<img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&zfor-the-badge&logo=github"/>
-</a>
-<a href="-URL DEMO GOES HERE-" target="_blank">
-<img src="https://img.shields.io/badge/-Website-green?style=plastic&zfor-the-badge&color=e8970c"/>
-</a>
-</p>
+<p align="center">
+        <a href="https://github.com/adrianhajdin/project_html_css_website" target="_blank">
+        <img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&labelColor=black&for-the-badge&logo=github"/>
+        </a>
+        <a href="-URL DEMO GOES HERE-" target="_blank">
+        <img src="https://img.shields.io/badge/-Website-blue?style=plastic&labelColor=black&for-the-badge&logo=googlechrome&logoColor=white&"/>
+        </a>
+    </p>
 </div>
 
 <br>
