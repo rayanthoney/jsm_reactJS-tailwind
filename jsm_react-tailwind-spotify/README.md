@@ -1,6 +1,62 @@
-# Project Lyrics
+# Build and Deploy a Better Spotify 2.0 Clone Music App with React 18! (Tailwind, Shazam, Redux)
 
-Develop an elegant React.js Music Application. 
+<div align="center" >
+<!-- link to project -->
+    <a href='-URL TO DEMO GOES HERE-'>
+    <!-- link to local image -->
+        <img src="src/assets/spotify.png" alt="" height="100%"/>
+    </a>
+
+**Link to project:** http://recruiters-love-seeing-live-demos.com/
+
+<p align="center">
+        <a href="https://github.com/adrianhajdin/project_music_player" target="_blank">
+        <img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&labelColor=black&for-the-badge&logo=github"/>
+        </a>
+        <a href="-URL DEMO GOES HERE-" target="_blank">
+        <img src="https://img.shields.io/badge/-Website-blue?style=plastic&labelColor=black&for-the-badge&logo=googlechrome&logoColor=white&"/>
+        </a>
+    </p>
+</div>
+
+<br>
+
+<div align="center">
+    <img  src="src/assets/jsMastery.png" width="64">
+</div>
+
+<br>
+
+- [Build and Deploy a Better Spotify 2.0 Clone Music App with React 18! (Tailwind, Shazam, Redux)](https://www.youtube.com/watch?v=I1cpb0tYV74&t=1104s)
+  - [GitHub Code (give it a star ⭐):](https://github.com/adrianhajdin/project_html_css_website)
+  - [Assets, Components, Public folders:](https://drive.google.com/file/d/1feqXd1mPKjdQDjd3l4hV_JcX-l1mJRor/view)
+  - [GitHub Gist Code:](https://gist.github.com/adrianhajdin/cad20aad1fefa9163a449e8feb91b602)
+  - [Deployed Site](https://modern-bussiness-website.com/)
+
+<br>
+
+In this course, you'll learn the following:
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora iure ab accusantium ipsam omnis quibusdam unde, mollitia sed praesentium, ad magnam nisi inventore quis vitae ipsa voluptatum facilis. Quas pariatur unde earum at voluptas sed repellendus eaque qui voluptatem quidem eveniet consequuntur eius quam eligendi aperiam, ullam explicabo vel ducimus.
+
+
+## Technologies Used:
+
+Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+
+<br>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,react,tailwind,redux" />
+  </a>
+</p>
+
+## How was this Built
+
+<!-- # Project Lyrics
+
+Develop an elegant React.js Music Application.
 
 Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
 
@@ -14,8 +70,8 @@ Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in
 
 To get started with development, you need to install few tools
 
-1. git 
-   
+1. git
+
    `git` version 2.13.1 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
 
    To check your version of git, run:
@@ -24,8 +80,8 @@ To get started with development, you need to install few tools
     git --version
    ```
 
-2. node 
-   
+2. node
+
    `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
 
    To check your version of node, run:
@@ -35,7 +91,7 @@ To get started with development, you need to install few tools
    ```
 
 3. npm
-  
+
    `npm` version 5.6.1 or higher. You will have it after you install node.
 
    To check your version of npm, run:
@@ -61,7 +117,7 @@ To set up a development environment, please follow these steps:
     ```
 
 3. Install the dependencies
-   
+
     ```shell
      npm install
     ```
@@ -71,7 +127,7 @@ To set up a development environment, please follow these steps:
     If you don't get an error, you are ready to start development.
 
 4. Run the app
-   
+
     ```shell
     npm run dev
     ```
@@ -110,10 +166,10 @@ Here we are going to focus on 2. Creating a Topical Branch:
 
    *Note:* `git pull` does a `git fetch` followed by a `git merge` to update the local repo with the remote repo. For a more detailed explanation, see [this stackoverflow post](http://stackoverflow.com/questions/292357/whats-the-difference-between-git-pull-and-git-fetch).
 
-2. To create a branch, use `git checkout -b <new-branch-name> [<base-branch-name>]`, where `base-branch-name` is optional and defaults to `main`. 
-   
+2. To create a branch, use `git checkout -b <new-branch-name> [<base-branch-name>]`, where `base-branch-name` is optional and defaults to `main`.
+
    Use a standard convention for branch names. For example, `<your-name>-dev`. It will be easier to track your pull requests if you use this convention.
-   
+
    I'm going to create a new branch called `jsm-dev` from the `main` branch and push it to github.
 
    ```bash
@@ -133,4 +189,4 @@ Here we are going to focus on 2. Creating a Topical Branch:
 
 8. You have successfully created a pull request. Now wait for mentor approval. Once approved, you can merge the pull request.
 
-#
+# -->
