@@ -13,10 +13,10 @@
 
 <p>
 <a href="https://github.com/rayanthoney/jm_refine_dashboard" target="_blank">
-<img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&zfor-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&labelColor=black&for-the-badge&logo=github"/>
 </a>
 <a href="-URL DEMO GOES HERE-" target="_blank">
-<img src="https://img.shields.io/badge/-Website-green?style=plastic&zfor-the-badge&color=e8970c"/>
+<img src="https://img.shields.io/badge/-Website-blue?style=plastic&labelColor=black&for-the-badge&logo=googlechrome&logoColor=white&"/>
 </a>
 </p>
 </div>
@@ -26,7 +26,6 @@
 <div align="center">
     <img  src="client/src/assets/jsMastery.png" width="64">
 </div>
-
 <br>
 
 - [Build and Deploy a React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and More](https://youtu.be/jx5hdo50a2M)
@@ -50,7 +49,7 @@ Here's where you can go to town on how you actually built this thing. Write as m
 
 <br>
 <br>
-
+<!-- 
 ```terminal
  > npx create-create-app ./
 ```
@@ -68,4 +67,4 @@ Here's where you can go to town on how you actually built this thing. Write as m
 
 ```terminal
   > npm install --legacy-peer-deps
-```
+``` -->
