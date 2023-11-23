@@ -13,7 +13,7 @@
 <br>
 
 <p>
-<a href="https://github.com/rayanthoney/jm_refine_dashboard" target="_blank">
+<a href="https://github.com/adrianhajdin/social_media_app" target="_blank">
 <img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&labelColor=black&for-the-badge&logo=github"/>
 </a>
 <a href="-URL DEMO GOES HERE-" target="_blank">
