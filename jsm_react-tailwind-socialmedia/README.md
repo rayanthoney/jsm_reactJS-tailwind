@@ -5,7 +5,7 @@
 <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
     <!-- link to local image -->
-        <img src="client/public/refine.png" alt="" height="100%"/>
+        <img src="public/assets/images/ripple_scrn.png" alt="" height="100%"/>
     </a>
 
 **Link to project:** http://recruiters-love-seeing-live-demos.com/
@@ -45,7 +45,7 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,react,typescript," />
+    <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,react,typescript,appwrite" />
   </a>
 </p>
 <br>
