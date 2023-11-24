@@ -25,7 +25,7 @@
 <br>
 
 <div align="center">
-    <img  src="assets/images/js-mastery/jsMastery.png" width="64">
+    <img  src="public/assets/images/jsMastery.png" width="64">
 </div>
 <br>
 
