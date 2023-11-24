@@ -30,9 +30,9 @@
 <br>
 
 - [Build and Deploy a Full Stack Social Media App | React JS, Appwrite, Tailwind CSS, React Query.](https://youtu.be/_W3R2VwRyF4?si=GHAh9hre288av2Zw)
-  - [GitHub Code (give it a star ⭐) :](https://youtu.be/k4lHXIzCEkM?si=He1_ndTPjK60ojhT)
-  - [Assets, Components, Public folders:](https://drive.google.com/file/d/1KsXjkJoyV7sFka_EiKOWD1BMAzf1B2sa/view)
-  - [GitHub Gist Code:](https://gist.github.com/adrianhajdin/c9e83f0fb1dfcf238dae0cc68a90ba82)
+  - [GitHub Code (give it a star ⭐) :](https://github.com/adrianhajdin/social_media_app)
+  <!-- - [Assets, Components, Public folders:](https://drive.google.com/file/d/1KsXjkJoyV7sFka_EiKOWD1BMAzf1B2sa/view) -->
+  - [GitHub Gist Code:](https://gist.github.com/adrianhajdin/4d2500bf5af601bbd9f4f596298d33ac)
 
 <br>
 
