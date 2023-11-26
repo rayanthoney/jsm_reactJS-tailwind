@@ -61,42 +61,25 @@ Here's where you can go to town on how you actually built this thing. Write as m
   </p>
 </div>
 
-## How was this Built
-<!-- 
-- TailwindCSS - a popular utility-first CSS styling framework
-- 
-- 
-- 
 
-<br>
-<br>
+## Optimizations
 
-```terminal
- > npm create vite@latest ./ -- --template react
-```
+_(optional)_
 
-## Install Tailwind CSS
+You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
 
-> Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
+## Lessons Learned:
 
-```terminal
- > npm install -D tailwindcss
- > npx tailwindcss init -p
-```
+No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _fuck yeah I did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
-## Installing Your Packages
+## Examples:
 
-```terminal
-  > npm install --
-``` -->
+Take a look at these couple examples that I have in my own portfolio:
 
+**Palettable:** https://github.com/alecortega/palettable
 
+**Twitter Battle:** https://github.com/alecortega/twitter-battle
 
-<!-- # React + Vite
+**Patch Panel:** https://github.com/alecortega/patch-panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
+**Patch Panel:** https://github.com/alecortega/patch-panel
