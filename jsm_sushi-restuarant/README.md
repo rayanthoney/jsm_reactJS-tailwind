@@ -1,3 +1,4 @@
+<!-- My Banner Section -->
 # Responsive Website HTML/CSS
 
 <div align="center" >
