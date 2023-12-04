@@ -1,6 +1,7 @@
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Link, useNavigate } from 'react-router-dom';
 
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -8,14 +9,17 @@ import { Button } from "@/components/ui/button";
 import Loader from "@/components/shared/Loader";
 import { useToast } from "@/components/ui/use-toast"
 
-import { SignupValidation } from "@/lib/validation";
-// import { z } from 'zod'
 import { useCreateUserAccount, useSignInAccount } from "@/lib/react-query/queriesAndMutations";
+import { SignupValidation } from "@/lib/validation";
+import { useUserContext } from "@/context/AuthContext";
+// import { z } from 'zod'
 
 const SignupForm = () => {
   const { toast } = useToast()
+  const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
+  const navigate = useNavigate();
 
-  const { mutateAsync: createUserAccount, isloading: isCreatingUser } = useCreateUserAccount()
+  const { mutateAsync: createUserAccount, isloading: isCreatingAccount } = useCreateUserAccount()
 
   const { mutantAsync: signInAccount, isLoading: isSigningIn } = useSignInAccount();
 
@@ -48,6 +52,14 @@ const SignupForm = () => {
     }
 
     const isLoggedIn = await checkAuthUser();
+
+    if (isLoggedIn) {
+      form.reset();
+
+      navigate('/');
+    } else {
+      return toast({ title: 'Sign up failed. Please try again.' })
+    }
   }
 
   return (
