@@ -1,31 +1,43 @@
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Loader from "@/components/shared/Loader";
-import { useToast } from "@/components/ui/use-toast"
+import { useToast } from "@/components/ui/use-toast";
 
-import { useCreateUserAccount, useSignInAccount } from "@/lib/react-query/queriesAndMutations";
-import { SignupValidation } from "@/lib/validation";
+import {
+  useCreateUserAccount,
+  useSignInAccount,
+} from "@/lib/react-query/queriesAndMutations";
+import { SigninValidation } from "@/lib/validation";
 import { useUserContext } from "@/context/AuthContext";
 // import { z } from 'zod'
 
 const SignupForm = () => {
-  const { toast } = useToast()
+  const { toast } = useToast();
   const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
   const navigate = useNavigate();
 
-  const { mutateAsync: createUserAccount, isPending: isCreatingAccount } = useCreateUserAccount()
+  const { mutateAsync: createUserAccount, isPending: isCreatingAccount } =
+    useCreateUserAccount();
 
-  const { mutateAsync: signInAccount, isPending: isSigningIn  } = useSignInAccount();
+  const { mutateAsync: signInAccount, isPending: isSigningIn } =
+    useSignInAccount();
 
   // 1. Define your form.
-  const form = useForm<z.infer<typeof SignupValidation>>({
-    resolver: zodResolver(SignupValidation),
+  const form = useForm<z.infer<typeof SigninValidation>>({
+    resolver: zodResolver(SigninValidation),
     defaultValues: {
       name: "",
       username: "",
@@ -35,20 +47,20 @@ const SignupForm = () => {
   });
 
   // 2. Define a submit handler.
-  async function onSubmit(values: z.infer<typeof SignupValidation>) {
+  async function onSubmit(values: z.infer<typeof SigninValidation>) {
     const newUser = await createUserAccount(values);
 
-    if(!newUser) {
-      return toast({ title: ' Sign up failed. Please try again. '})
+    if (!newUser) {
+      return toast({ title: " Sign up failed. Please try again. " });
     }
 
     const session = await signInAccount({
       email: values.email,
       password: values.password,
-    })
+    });
 
-    if(!session) {
-      return toast({ title: ' Sign in failed. Please try again. ' })
+    if (!session) {
+      return toast({ title: " Sign in failed. Please try again. " });
     }
 
     const isLoggedIn = await checkAuthUser();
@@ -56,9 +68,9 @@ const SignupForm = () => {
     if (isLoggedIn) {
       form.reset();
 
-      navigate('/');
+      navigate("/");
     } else {
-      return toast({ title: 'Sign up failed. Please try again.' })
+      return toast({ title: "Sign up failed. Please try again." });
     }
   }
 
@@ -135,16 +147,23 @@ const SignupForm = () => {
             )}
           />
           <Button type="submit" className="shad-button_primary">
-              {isCreatingAccount ? (
-                <div className="flex-center gap-2">
+            {isCreatingAccount ? (
+              <div className="flex-center gap-2">
                 <Loader /> Loading...
-                </div>
-              ): "Sign up"}
+              </div>
+            ) : (
+              "Sign up"
+            )}
           </Button>
-                
+
           <p className="text-small-regular text-light-2 text-center mt-2">
             Already have an account?
-            {/* <Link to="/sign-in" className="text-primary-500 text-small-semibold ml-1">Log in.</Link> */}
+            <Link
+              to="/sign-in"
+              className="text-primary-500 text-small-semibold ml-1"
+            >
+              Log in.
+            </Link>
           </p>
         </form>
       </div>
