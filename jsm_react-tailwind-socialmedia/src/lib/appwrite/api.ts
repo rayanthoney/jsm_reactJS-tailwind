@@ -38,46 +38,68 @@ export async function saveUserToDB(user: {
   imageUrl: URL;
   username?: string;
 }) {
-    try {
-        const newUser = await databases.createDocument(
-            appwriteConfig.databaseId,
-            appwriteConfig.userCollectionId,
-            ID.unique(),
-            user,
-        )
+  try {
+    const newUser = await databases.createDocument(
+      appwriteConfig.databaseId,
+      appwriteConfig.userCollectionId,
+      ID.unique(),
+      user
+    );
 
-        return newUser;
-    } catch (error) {
-        console.log(error);
-    }
+    return newUser;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-export async function signInAccount(user: { email: string; password: string; }) {
-    try {
-        const session = await account.createEmailSession(user.email, user.password);
+export async function signInAccount(user: { email: string; password: string }) {
+  try {
+    const session = await account.createEmailSession(user.email, user.password);
 
-        return session;
-    } catch (error) {
-        console.log(error)
-    }
+    return session;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
+// ============================== GET ACCOUNT
+export async function getAccount() {
+  try {
+    const currentAccount = await account.get();
+
+    return currentAccount;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+// ============================== GET USER
 export async function getCurrentUser() {
-    try {
-        const currentAccount = await account.get();
+  try {
+    const currentAccount = await getAccount();
 
-        if(!currentAccount) throw Error;
+    if (!currentAccount) throw Error;
 
-        const currentUser = await databases.listDocuments(
-            appwriteConfig.databaseId,
-            appwriteConfig.userCollectionId,
-            [Query.equal('accountId', currentAccount.$id)]
-        )
+    const currentUser = await databases.listDocuments(
+      appwriteConfig.databaseId,
+      appwriteConfig.userCollectionId,
+      [Query.equal("accountId", currentAccount.$id)]
+    );
 
-        if(!currentUser) throw Error;
+    if (!currentUser) throw Error;
 
-        return currentUser.documents[0];
-    } catch (error) {
-        console.log(error);
-    }
+    return currentUser.documents[0];
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function signOutAccount() {
+  try {
+    const session = await account.deleteSession("current");
+
+    return session;
+  } catch (error) {
+    console.log(error);
+  }
 }
