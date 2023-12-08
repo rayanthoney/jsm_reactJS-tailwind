@@ -1,28 +1,16 @@
-import * as z from "zod";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Link, useNavigate } from "react-router-dom";
-
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import { Link, useNavigate } from 'react-router-dom';
+// import * as z from "zod";
+import { useToast } from "@/components/ui/use-toast"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useForm } from "react-hook-form";
+import { SignupValidation } from "@/lib/validation";
+import { z } from 'zod'
 import Loader from "@/components/shared/Loader";
-import { useToast } from "@/components/ui/use-toast";
-
-import {
-  useCreateUserAccount,
-  useSignInAccount,
-} from "@/lib/react-query/queriesAndMutations";
-import { SigninValidation } from "@/lib/validation";
 import { useUserContext } from "@/context/AuthContext";
-// import { z } from 'zod'
+import { useCreateUserAccount, useSignInAccount } from "@/lib/react-query/queriesAndMutations";
 
 const SignupForm = () => {
   const { toast } = useToast();
@@ -36,8 +24,8 @@ const SignupForm = () => {
     useSignInAccount();
 
   // 1. Define your form.
-  const form = useForm<z.infer<typeof SigninValidation>>({
-    resolver: zodResolver(SigninValidation),
+  const form = useForm<z.infer<typeof SignupValidation>>({
+    resolver: zodResolver(SignupValidation),
     defaultValues: {
       name: "",
       username: "",
@@ -47,7 +35,7 @@ const SignupForm = () => {
   });
 
   // 2. Define a submit handler.
-  async function onSubmit(values: z.infer<typeof SigninValidation>) {
+  async function onSubmit(values: z.infer<typeof SignupValidation>) {
     const newUser = await createUserAccount(values);
 
     if (!newUser) {
@@ -151,9 +139,7 @@ const SignupForm = () => {
               <div className="flex-center gap-2">
                 <Loader /> Loading...
               </div>
-            ) : (
-              "Sign up"
-            )}
+            ) : "Sign up"}
           </Button>
 
           <p className="text-small-regular text-light-2 text-center mt-2">
