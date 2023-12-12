@@ -1,23 +1,27 @@
-import { useEffect } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+
+import { INavLink } from "@/types";
+import { sidebarLinks } from "@/constants";
+
 import { Button } from '../ui/button'
 import { useSignOutAccount } from "@/lib/react-query/queriesAndMutations";
 import { useUserContext } from "@/context/AuthContext";
-import { sidebarLinks } from "@/constants";
-import { INavLink } from "@/types";
+
+import { useEffect } from "react";
 
 const LeftSidebar = () => {
-  const { pathname } = useLocation();
-  const { mutate: signOut, isSuccess } = useSignOutAccount();
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   const { user } = useUserContext();
+
+  const { mutate: signOut, isSuccess } = useSignOutAccount();
 
   useEffect(() => {
     if (isSuccess) navigate(0);
   }, [isSuccess]);
 
   return (
-    <nav className="LeftSidebar">
+    <nav className="leftsidebar">
       <div className="flex flex-col gap-11">
         <Link to="/" className="flex gap-3 items-center">
           <img
