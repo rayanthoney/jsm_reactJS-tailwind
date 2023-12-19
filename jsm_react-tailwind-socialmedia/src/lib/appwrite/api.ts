@@ -116,7 +116,7 @@ export async function createPost(post: INewPost) {
 
     if (!uploadedFile) throw Error;
 
-    // Get file url
+    // Get file url...
     const fileUrl = getFilePreview(uploadedFile.$id);
 
     if (!fileUrl) {
@@ -124,10 +124,10 @@ export async function createPost(post: INewPost) {
       throw Error;
     }
 
-    // Convert tags into an array
+    // Convert tags into an array...
     const tags = post.tags?.replace(/ /g, "").split(",") || [];
 
-    // Save post to database
+    // Save post to database...
     const newPost = await databases.createDocument(
       appwriteConfig.databaseId,
       appwriteConfig.postCollectionId,
@@ -195,4 +195,16 @@ export async function deleteFile(fileId: string) {
   } catch (error) {
     console.log(error);
   }
+}
+
+export async function getRecentPosts() {
+  const posts = await databases.listDocuments(
+    appwriteConfig.databaseId,
+    appwriteConfig.postCollectionId,
+    [Query.orderDesc('$createdAt'), Query.limit(20)]
+  )
+
+  if(posts) throw Error;
+
+  return posts;
 }
