@@ -184,7 +184,7 @@ export async function getFilePreview(fileId: string) {
     } catch (error) {
       console.log(error);
     }
-  }
+}
   
   // ============================== DELETE FILE
 export async function deleteFile(fileId: string) {
@@ -197,11 +197,12 @@ export async function deleteFile(fileId: string) {
   }
 }
 
+// ============================== GET POPULAR POSTS (BY HIGHEST LIKE COUNT)
 export async function getRecentPosts() {
   const posts = await databases.listDocuments(
     appwriteConfig.databaseId,
     appwriteConfig.postCollectionId,
-    [Query.orderDesc('$createdAt'), Query.limit(20)]
+    [Query.orderDesc("$createdAt"), Query.limit(20)]
   )
 
   if(posts) throw Error;
