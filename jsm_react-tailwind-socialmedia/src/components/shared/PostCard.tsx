@@ -4,6 +4,7 @@ import { Models } from "appwrite";
 import { Link } from "react-router-dom";
 import PostStats from "./PostStats";
 
+
 type PostCardProps = {
   post: Models.Document;
 };
@@ -11,7 +12,7 @@ type PostCardProps = {
 const PostCard = ({ post }: PostCardProps) => {
   const { user } = useUserContext();
 
-  console.log(post);
+  // console.log(post)
 
   if (!post.creator) return;
 
@@ -36,7 +37,7 @@ const PostCard = ({ post }: PostCardProps) => {
             </p>
             <div className="flex-center gap-2 text-light-3">
               <p className="subtle-semibold lg:small-regular">
-                {formatDateString(post.$cteatedAt)}
+                {formatDateString(post.$createdAt)}
               </p>
               -
               <p className="subtle-semibold lg:small-regular">
@@ -51,7 +52,7 @@ const PostCard = ({ post }: PostCardProps) => {
           className={`${user.id !== post.creator.$id && "hidden"}`}
         >
           <img
-            src="/assets/icons/edit.svgedit"
+            src="/assets/icons/edit.svg"
             alt="edit"
             width={20}
             height={20}
