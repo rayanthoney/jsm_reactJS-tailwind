@@ -3,8 +3,8 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useNavigate } from "react-router-dom";
 
-import { Button } from "@/components/ui/button";
 import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
 import FileUploader from "../shared/FileUploader";
@@ -20,7 +20,7 @@ type PostFormProps = {
 };
 
 const PostForm = ({ post }: PostFormProps) => {
-  const { mutateAsync: createPost, isPending: isLoadingCreate } = useCreatePost()
+  const { mutateAsync: createPost, isPending: isLoadingCreate } = useCreatePost();
   const { user } = useUserContext();
   const { toast } = useToast();
   const navigate  = useNavigate();
