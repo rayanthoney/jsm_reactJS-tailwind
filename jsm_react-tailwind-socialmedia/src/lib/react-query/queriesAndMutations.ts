@@ -55,6 +55,13 @@ export const useCreatePost = () => {
   });
 };
 
+export const useGetCurrentUser = () => {
+  return useQuery({
+    queryKey: [QUERY_KEYS.GET_CURRENT_USER],
+    queryFn: getCurrentUser,
+  });
+};
+
 export const useGetRecentPosts = () => {
   return useQuery({
     queryKey: [QUERY_KEYS.GET_RECENT_POSTS],
@@ -88,14 +95,14 @@ export const useLikePost = () => {
       });
     },
   });
-};
+}
 
-export const useSavedPost = () => {
+export const useSavePost = () => {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: ({ userId, postId }: { userId: string; postId: string }) =>
-      savePost(userId, postId),
+    mutationFn: ({ postId, userId }: { postId: string; userId: string }) =>
+      savePost(postId, userId ),
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: [QUERY_KEYS.GET_RECENT_POSTS],
@@ -126,12 +133,5 @@ export const useDeleteSavedPost = () => {
         queryKey: [QUERY_KEYS.GET_CURRENT_USER],
       });
     },
-  });
-};
-
-export const useGetCurrentUser = () => {
-  return useQuery({
-    queryKey: [QUERY_KEYS.GET_CURRENT_USER],
-    queryFn: getCurrentUser,
   });
 };
