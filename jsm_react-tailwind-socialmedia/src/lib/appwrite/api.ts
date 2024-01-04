@@ -53,23 +53,23 @@ export async function saveUserToDB(user: {
     console.log(error);
   }
 }
-
+  
 // ============================== SIGN IN
 export async function signInAccount(user: { email: string; password: string }) {
-  try {
-    const session = await account.createEmailSession(user.email, user.password);
+try {
+  const session = await account.createEmailSession(user.email, user.password);
 
-    return session;
-  } catch (error) {
-    console.log(error);
-  }
+  return session;
+} catch (error) {
+  console.log(error);
+}
 }
 
 // ============================== GET ACCOUNT
 export async function getAccount() {
   try {
     const currentAccount = await account.get();
-
+    
     return currentAccount;
   } catch (error) {
     console.log(error);
@@ -80,26 +80,26 @@ export async function getAccount() {
 export async function getCurrentUser() {
   try {
     const currentAccount = await getAccount();
-
+    
     if (!currentAccount) throw Error;
-
+    
     const currentUser = await databases.listDocuments(
       appwriteConfig.databaseId,
       appwriteConfig.userCollectionId,
       [Query.equal("accountId", currentAccount.$id)]
-    );
-
-    if (!currentUser) throw Error;
-
-    return currentUser.documents[0];
-  } catch (error) {
-    console.log(error);
-    return null;
+      );
+      
+      if (!currentUser) throw Error;
+      
+      return currentUser.documents[0];
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
   }
-}
-
-// ============================== SIGN OUT
-export async function signOutAccount() {
+  
+  // ============================== SIGN OUT
+  export async function signOutAccount() {
   try {
     const session = await account.deleteSession("current");
 
@@ -108,6 +108,10 @@ export async function signOutAccount() {
     console.log(error);
   }
 }
+
+// ============================================================
+// POSTS
+// ============================================================
 
 // ============================== CREATE POST
 export async function createPost(post: INewPost) {
