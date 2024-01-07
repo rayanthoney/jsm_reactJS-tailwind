@@ -33,7 +33,44 @@
 <!--                    -->
 <!-- Begin Project #1   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#1 Build and Deploy a Full Stack Social Media App | React JS, Appwrite, Tailwind CSS, React Query.</h3>
+<h3 href="https://youtu.be/FkowOdMjvYo?si=wMOrUNdqOiXxQ4b8" align="left">#1 Build and Deploy an Amazing 3D Developer Portfolio in React with Three.js.</h3>
+<div >
+        <!-- link to project -->
+    <a href='-URL TO DEMO GOES HERE-'>
+    <!-- link to local image -->
+        <img src="assets/images/js-mastery/project.png" alt="" width="30%" align="right" />
+    </a>
+</div>
+
+- [ ] Build and Deploy
+  - [ ] Create a gif during navigation
+  - [ ] >-PLACE YOUR TODO TASKS HERE-<
+  - [ ] >-PLACE YOUR TODO TASKS HERE-<
+  - [ ] >-PLACE YOUR TODO TASKS HERE-<
+  
+<br>
+<div>
+    <p align="center">
+        <a href="https://github.com/adrianhajdin/3D_portfolio" target="_blank">
+        <img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&labelColor=black&for-the-badge&logo=github"/>
+        </a>
+        <a href="-URL DEMO GOES HERE-" target="_blank">
+        <img src="https://img.shields.io/badge/-Website-blue?style=plastic&labelColor=black&for-the-badge&logo=googlechrome&logoColor=white&"/>
+        </a>
+    </p>
+    <!-- <p>The video is about building and deploying a social media app using <strong>React JS</strong>, <strong>Appwrite</strong>, <strong>Tailwind</strong> <strong>CSS</strong>, and <strong>React Query</strong>. The app promises a stunning UI with a native mobile feel, a hassle-free backend setup with Appwrite, and various features like authentication, infinite scroll, user profiles, and more.</p> -->
+    <h3>Watch the video tutorial here::</h3>
+    <a href="https://youtu.be/FkowOdMjvYo?si=wMOrUNdqOiXxQ4b8" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-red?style=plastic&labelColor=black&logo=youtube"/>
+    </a>
+</div>
+<br>
+<hr>
+
+<!--                    -->
+<!-- Begin Project #2   -->
+<!--                    -->
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#2 Build and Deploy a Full Stack Social Media App | React JS, Appwrite, Tailwind CSS, React Query.</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -68,9 +105,9 @@
 <hr>
 
 <!--                    -->
-<!-- Begin Project #2   -->
+<!-- Begin Project #3   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#2 Tailwind CSS Full Course 2023 | Build and Deploy a Nike Website.</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#3 Tailwind CSS Full Course 2023 | Build and Deploy a Nike Website.</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -106,9 +143,9 @@
 <hr>
 
 <!--                    -->
-<!-- Begin Project #3   -->
+<!-- Begin Project #4   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#3 Creating a Sushi-Themed Website: 2023 HTML & CSS Guide for Beginners</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#4 Creating a Sushi-Themed Website: 2023 HTML & CSS Guide for Beginners</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -146,9 +183,9 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                    -->
-<!-- Begin Project #4   -->
+<!-- Begin Project #5   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#4 Turning Your AI Application into a Profitable SaaS Business | AI Summarizer</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#5 Turning Your AI Application into a Profitable SaaS Business | AI Summarizer</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -186,9 +223,9 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                    -->
-<!-- Begin Project #5   -->
+<!-- Begin Project #6   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#5 Build and Deploy an AI-Powered 3D Website Using React | 2023 Three JS Course Tutorial.</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#6 Build and Deploy an AI-Powered 3D Website Using React | 2023 Three JS Course Tutorial.</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -226,9 +263,9 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                    -->
-<!-- Begin Project #6   -->
+<!-- Begin Project #7   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#6 Build and Deploy a React Native App | 2023 React Native Course Tutorial for Beginners.</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#7 Build and Deploy a React Native App | 2023 React Native Course Tutorial for Beginners.</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -266,9 +303,9 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                    -->
-<!-- Begin Project #7   -->
+<!-- Begin Project #8   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#7 Build and Deploy an Amazing 3D Web Developer Portfolio in React JS | Beginner Three.JS Tutorial.</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#8 Build and Deploy an Amazing 3D Web Developer Portfolio in React JS | Beginner Three.JS Tutorial.</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -306,9 +343,9 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                    -->
-<!-- Begin Project #8   -->
+<!-- Begin Project #9   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#8 Build and Deploy a Full Stack MERN Application with CRUD, Auth and Charts...</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#9 Build and Deploy a Full Stack MERN Application with CRUD, Auth and Charts...</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -346,9 +383,9 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                    -->
-<!-- Begin Project #9   -->
+<!-- Begin Project #10   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#9 Build and Deploy a Full Stack MERN AI Image Generation App | Midjourney & DALL-E Clone</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#10 Build and Deploy a Full Stack MERN AI Image Generation App | Midjourney & DALL-E Clone</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -386,9 +423,9 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                    -->
-<!-- Begin Project #10   -->
+<!-- Begin Project #11   -->
 <!--                    -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#10 Build and Deploy Your Own ChatGPT AI App in JavaScript | OpenAI, Machine Learning.</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#11 Build and Deploy Your Own ChatGPT AI App in JavaScript | OpenAI, Machine Learning.</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -426,9 +463,9 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                     -->
-<!-- Begin Project #11   -->
+<!-- Begin Project #12   -->
 <!--                     -->
-<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#11 Spotify 2.0 Clone Music App with React & Tailwind</h3>
+<h3 href="https://www.youtube.com/@javascriptmastery" align="left">#12 Spotify 2.0 Clone Music App with React & Tailwind</h3>
 <div >
         <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
@@ -466,5 +503,5 @@ voluptatum veritatis rem sequi repellat laboriosam voluptate beatae eligendi. Iu
 <hr>
 
 <!--                     -->
-<!-- Begin Project #12   -->
+<!-- Begin Project #13   -->
 <!--                     -->
