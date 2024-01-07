@@ -27,7 +27,7 @@ export async function createUserAccount(user: INewUser) {
 
     return newUser;
   } catch (error) {
-    console.log(error);
+    console.log("Error saving the user account to the database", error);
     return error;
   }
 }
@@ -50,7 +50,8 @@ export async function saveUserToDB(user: {
 
     return newUser;
   } catch (error) {
-    console.log(error);
+    
+    console.log("Error saving the user to the database", error);
   }
 }
 
@@ -61,7 +62,7 @@ export async function signInAccount(user: { email: string; password: string }) {
 
     return session;
   } catch (error) {
-    console.log(error);
+    console.log("Error signing in of the current session", error)
   }
 }
 
@@ -72,7 +73,7 @@ export async function getAccount() {
 
     return currentAccount;
   } catch (error) {
-    console.log(error);
+    console.log("Error no valid session found", error);
   }
 }
 
@@ -93,7 +94,7 @@ export async function getCurrentUser() {
 
     return currentUser.documents[0];
   } catch (error) {
-    console.log(error);
+    console.log("Error getting the current user", error);
     return null;
   }
 }
@@ -105,7 +106,7 @@ export async function signOutAccount() {
 
     return session;
   } catch (error) {
-    console.log(error);
+    console.log("Error signing out of the current session", error);
   }
 }
 
@@ -154,7 +155,7 @@ export async function createPost(post: INewPost) {
 
     return newPost;
   } catch (error) {
-    console.log(error);
+    console.log("Error creating a post", error);
   }
 }
 
@@ -169,7 +170,7 @@ export async function uploadFile(file: File) {
 
     return uploadedFile;
   } catch (error) {
-    console.log(error);
+    console.log("Error uploadFile", error)
   }
 }
 
@@ -187,7 +188,7 @@ export function getFilePreview(fileId: string) {
 
     return fileUrl;
   } catch (error) {
-    console.log(error);
+    console.log("Error getting the preview url of the image", error);
   }
 }
 
@@ -198,7 +199,7 @@ export async function deleteFile(fileId: string) {
 
     return { status: "ok" };
   } catch (error) {
-    console.log(error);
+    console.log("Error failed to delete the file with id", error);
   }
 }
 
@@ -215,7 +216,7 @@ export async function getRecentPosts() {
 
     return posts;
   } catch (error) {
-    console.log(error);
+    console.log("Error failed to fetch recent posts from database", error);
   }
 }
 
@@ -235,7 +236,7 @@ export async function likePost(postId: string, likesArray: string[]) {
 
     return updatedPost;
   } catch (error) {
-    console.log(error);
+    console.log("Error while trying to update a Post document in Like/Unlike Post operation", error);
   }
 }
 
@@ -256,7 +257,7 @@ export async function savePost(postId: string, userId: string) {
 
     return updatedPost;
   } catch (error) {
-    console.log(error);
+    console.log("Error save Saved Post", error);
   }
 }
 
@@ -273,7 +274,7 @@ export async function deleteSavedPost(savedRecordId: string) {
 
     return { status: "ok" };
   } catch (error) {
-    console.log(error);
+    console.log("Delete Saved Post Error", error);
   }
 }
 
@@ -341,7 +342,7 @@ export async function updatePost(post: IUpdatePost) {
 
     return updatedPost;
   } catch (error) {
-    console.log(error);
+    console.log("Error in updatePost", error);
   }
 }
 
@@ -358,5 +359,44 @@ export async function deletePost(postId: string, imageId: string) {
     return { status: "ok" };
   } catch (error) {
     console.log("Error deleting Post: ", error);
+  }
+}
+
+export async function getInfinitePosts({ pageParam } : { pageParam: number }) {
+  const queries: any[] = [Query.orderDesc('$updatedAt'), Query.limit(10)]
+
+  if(pageParam) {
+    queries.push(Query.cursorAfter(pageParam.toString()));
+  }
+
+  try {
+    const posts = await databases.listDocuments(
+      appwriteConfig.databaseId,
+      appwriteConfig.postCollectionId,
+      queries
+    )
+
+    if(!posts) throw Error;
+
+    return posts;
+  } catch (error) {
+    console.log("Error getting Infinite posts", error);
+  }
+}
+
+export async function searchPosts(searchTerm: string) {
+
+  try {
+    const posts = await databases.listDocuments(
+      appwriteConfig.databaseId,
+      appwriteConfig.postCollectionId,
+      [Query.search('caption', searchTerm)]
+    )
+
+    if(!posts) throw Error;
+
+    return posts;
+  } catch (error) {
+    console.log("Error searching for posts", error );
   }
 }
